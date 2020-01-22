@@ -69,7 +69,7 @@ console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sher
 // количества их друзей (поле friends)
 
 const getNamesSortedByFriendsCount = users =>
-  [...users]
+  users
     .sort((a, b) => a.friends.length - b.friends.length)
     .map(user => user.name);
 
